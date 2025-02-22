@@ -45,9 +45,9 @@ class _IssuePageState extends State<IssuePage> {
     try {
       setState(() => _isUploading = true);
 
-      final url = "https://api.cloudinary.com/v1_1/ddwiftlk3/image/upload";
+      final url = "https://api.cloudinary.com/v1_1/username/image/upload";
       final request = http.MultipartRequest("POST", Uri.parse(url))
-        ..fields['upload_preset'] = "feedback_app"
+        ..fields['upload_preset'] = "your_preset"
         ..files.add(await http.MultipartFile.fromPath('file', imageFile.path));
 
       final response = await request.send();
