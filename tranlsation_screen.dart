@@ -110,7 +110,7 @@ class _TranslationScreenState extends State<TranslationScreen> {
   };
 
   // Detect Language API key
-  final String apiKey = "47150aed8af58c1967e8bfd22b6a4ef7";
+  final String apiKey = "";
 
   @override
   void initState() {
